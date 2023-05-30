@@ -6,6 +6,7 @@ import Navbar from "../components/navigation/Navbar";
 import FeatureSection from "../components/Layout/FeatureSection.jsx";
 import Footer from "../components/Layout/Footer.jsx";
 import "../Styles/HeroSection.css";
+import Testimonial from "../components/Layout/Testimonial.jsx";
 
 function HeroSection() {
   return (
@@ -24,7 +25,10 @@ function HeroSection() {
       </div>
       <FeatureSection />
       <LogoClouds />
+      <section>
+      <Testimonial />
       <Footer />
+      </section>
     </div>
   );
 }

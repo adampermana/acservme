@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SiGooglemaps } from "react-icons/si";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,16 +31,16 @@ function Navbar() {
             >
               <path
                 className={isOpen ? "hidden" : "inline-flex"}
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
               <path
                 className={isOpen ? "inline-flex" : "hidden"}
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
               ></path>
             </svg>
@@ -71,15 +72,23 @@ function Navbar() {
             Documentation
           </a>
 
+          <a
+            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8]"
+            href="/Nonfound"
+          >
+            <SiGooglemaps className="h-4 w-4 inline-block mr-1 ml-5" />
+            find a ACSERVME
+          </a>
+
           <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
             <button
-              className="block px-4 py-2 mt-2 text-sm text-gray-500 md:mt-0 hover:text-[#519de8] focus:outline-none focus:shadow-outline"
+              className="block px-4 py-2 mt-3 text-sm text-gray-500 md:mt-0 hover:text-[#519de8] focus:outline-none focus:shadow-outline"
               fdprocessedid="62a6vg"
             >
               Sign in
             </button>
             <button
-              className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-[#519de8] rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-gray-700 active:bg-gray-800 active:text-white focus-visible:outline-black"
+              className="inline-flex items-center justify-center px-4 py-2 mt-2 text-sm font-semibold text-white bg-[#519de8] rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-gray-700 active:bg-gray-800 active:text-white focus-visible:outline-black"
               fdprocessedid="qs5fwk"
             >
               Sign up
