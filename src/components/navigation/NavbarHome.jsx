@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { SiGooglemaps } from "react-icons/si";
 
-function Navbar() {
+function NavbarHome() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full mx-auto bg-white 2xl:max-w-7xl">
+    <div className="w-full mx-auto bg-white 2xl:max-w-8xl outline outline-zinc-100">
       <div className="relative flex flex-col w-full p-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div className="flex flex-row items-center justify-between lg:justify-start">
           <a
@@ -82,16 +82,16 @@ function Navbar() {
 
           <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
             <button
-              className="block px-4 py-2 mt-3 text-sm text-gray-500 md:mt-0 hover:text-[#519de8] focus:outline-none focus:shadow-outline"
+              className="block px-6 py-2 mt-2 text-sm text-sm font-semibold text-[#519de8] rounded-full group focus:outline outline outline-2 outline-[#519de8] focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white active:bg-zinc-50 active:text-[#519de8] focus-visible:outline-black "
               fdprocessedid="62a6vg"
             >
-              Sign in
+              Login
             </button>
             <button
-              className="inline-flex items-center justify-center px-4 py-2 mt-2 text-sm font-semibold text-white bg-[#519de8] rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-gray-700 active:bg-gray-800 active:text-white focus-visible:outline-black"
+              className=" ml-1 inline-flex items-center justify-center px-6 py-2 mt-2 text-sm font-semibold text-[#519de8] rounded-full group focus:outline outline outline-2 outline-[#519de8] focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white active:bg-zinc-50 active:text-[#519de8] focus-visible:outline-black"
               fdprocessedid="qs5fwk"
             >
-              Sign up
+              Register
             </button>
           </div>
         </nav>
@@ -100,4 +100,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarHome;

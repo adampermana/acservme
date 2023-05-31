@@ -145,7 +145,7 @@ const Testimonial = () => {
                   </blockquote>
                   <figcaption className="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
                     <div>
-                      <div className="text-base text-black">Alberd Romeo</div>
+                      <div className="text-base text-black">Alberd Pardomuan</div>
                       <div className="mt-1 text-sm text-gray-500">
                         Founder of PT.Jaya Nusantara
                       </div>
@@ -153,7 +153,7 @@ const Testimonial = () => {
                     <div className="overflow-hidden rounded-full bg-gray-50">
                       <img
                         alt=""
-                        src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1999&amp;q=80"
+                        src="https://i.ibb.co/fH58MPP/alberd.jpg"
                         width="56"
                         height="56"
                         decoding="async"

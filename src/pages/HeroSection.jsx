@@ -2,16 +2,16 @@ import React from "react";
 import HeroContent from "../components/Layout/HeroContent.jsx";
 import herosection from "../assets/images/herosection.jpg";
 import LogoClouds from "../components/Layout/LogoClouds.jsx";
-import Navbar from "../components/navigation/Navbar";
 import FeatureSection from "../components/Layout/FeatureSection.jsx";
-import Footer from "../components/Layout/Footer.jsx";
 import "../Styles/HeroSection.css";
 import Testimonial from "../components/Layout/Testimonial.jsx";
+import NavbarHome from "../components/navigation/NavbarHome.jsx";
+import Footer from "../components/Layout/Footer.jsx";
 
 function HeroSection() {
   return (
     <div>
-      <Navbar />
+      <NavbarHome />
       <div className="flex justify-center grid-cols-1">
         <HeroContent />
         <div className="hero-image-container">
@@ -25,10 +25,8 @@ function HeroSection() {
       </div>
       <FeatureSection />
       <LogoClouds />
-      <section>
       <Testimonial />
       <Footer />
-      </section>
     </div>
   );
 }
