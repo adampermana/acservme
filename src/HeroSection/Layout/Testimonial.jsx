@@ -17,8 +17,18 @@ const Testimonial = () => {
                     <p className="text-base text-gray-500">
                       "Layanan perbaikan dan cuci AC terpercaya"
                     </p>
+
+                    <div className="flex items-center space-x-2 dark:text-yellow-500">
+			<img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+      <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+      <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+      <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+      <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+
+			<span className="text-xl font-bold">5</span>
+		</div>
                   </blockquote>
-                  <figcaption className="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
+                  <figcaption className="relative flex items-center justify-between pt-6 mt-3 border-t border-gray-100">
                     <div>
                       <div className="text-base text-black">Adam Permana</div>
                       <div className="mt-1 text-sm text-gray-500">
@@ -47,14 +57,24 @@ const Testimonial = () => {
                     <p className="text-base text-gray-500">
                       "Jasa perbaikan AC terbaik dan bertanggung jawab"
                     </p>
+
+                    <div className="flex items-center space-x-2 dark:text-yellow-500">
+                    <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+                    <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+                    <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+                    <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+                    <img width="22" height="22" src="https://img.icons8.com/color/48/star-half.png" alt="star-half"/>
+                                        
+			<span className="text-xl font-bold">4.5</span>
+		</div>
                   </blockquote>
-                  <figcaption className="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
+                  <figcaption className="relative flex items-center justify-between pt-6 mt-3 border-t border-gray-100">
                     <div>
                       <div className="text-base text-black">
                         Agung Yuda Pratama
                       </div>
                       <div className="mt-1 text-sm text-gray-500">
-                        Founder of PT.Istok
+                        Founder of PT.Jaya Agung
                       </div>
                     </div>
                     <div className="overflow-hidden rounded-full bg-gray-50">
@@ -80,6 +100,17 @@ const Testimonial = () => {
                     <p className="text-base text-gray-500">
                       "Sudah berlangganan lama, dan selalu menjadi andalan"
                     </p>
+                    
+                    
+                    <div className="flex items-center space-x-2 dark:text-yellow-500">
+                    <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+                    <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+                    <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+                    <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+                    <img width="22" height="22" src="https://img.icons8.com/color/48/star-half.png" alt="star-half"/>
+                                        
+			<span className="text-xl font-bold">4.8</span>
+		</div>
                   </blockquote>
                   <figcaption className="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
                     <div>
@@ -112,6 +143,16 @@ const Testimonial = () => {
                       "Service AC pokoknya harus sama ACSERVME deh, bagus
                       banget!"
                     </p>
+                    
+                    <div className="flex items-center space-x-2 dark:text-yellow-500">
+                    <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+                    <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+                    <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+                    <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+                    <img width="22" height="22" src="https://img.icons8.com/color/48/star-half.png" alt="star-half"/>
+                                        
+			<span className="text-xl font-bold">4.5</span>
+		</div>
                   </blockquote>
                   <figcaption className="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
                     <div>
@@ -142,6 +183,16 @@ const Testimonial = () => {
                     <p className="text-base text-gray-500">
                       "Pelayanan yang bagus dan tukang servis nya ramah banget"
                     </p>
+
+                    <div className="flex items-center space-x-2 dark:text-yellow-500">
+			<img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+      <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+      <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+      <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+      <img width="22" height="22" src="https://img.icons8.com/fluency/48/star.png" alt="star"/>
+
+			<span className="text-xl font-bold">5</span>
+		</div>
                   </blockquote>
                   <figcaption className="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
                     <div>

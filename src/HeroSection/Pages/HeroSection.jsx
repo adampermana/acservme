@@ -1,12 +1,12 @@
 import React from "react";
-import HeroContent from "../components/Layout/HeroContent.jsx";
+import HeroContent from "../Layout/HeroContent.jsx";
 import herosection from "../assets/images/herosection.jpg";
-import LogoClouds from "../components/Layout/LogoClouds.jsx";
-import FeatureSection from "../components/Layout/FeatureSection.jsx";
-import "../Styles/HeroSection.css";
-import Testimonial from "../components/Layout/Testimonial.jsx";
-import NavbarHome from "../components/navigation/NavbarHome.jsx";
-import Footer from "../components/Layout/Footer.jsx";
+import LogoClouds from "../Layout/LogoClouds.jsx";
+import FeatureSection from "../Layout/FeatureSection.jsx";
+import Testimonial from "../Layout/Testimonial.jsx";
+import NavbarHome from "../Layout/Navigation/NavbarHome.jsx";
+import Footer from "../Layout/Footer.jsx";
+
 
 function HeroSection() {
   return (

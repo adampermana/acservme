@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { SiGooglemaps } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 function NavbarHome() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="w-full mx-auto bg-white 2xl:max-w-8xl outline outline-zinc-100">
-      <div className="relative flex flex-col w-full p-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+      <div className="relative flex flex-col w-full p-1 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 shadow-lg">
         <div className="flex flex-row items-center justify-between lg:justify-start">
           <a
             className="text-lg tracking-tight text-black uppercase focus:outline-none focus:ring lg:text-2xl"
@@ -54,41 +55,42 @@ function NavbarHome() {
           }
         >
           <a
-            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] lg:ml-auto"
-            href="/Nonfound"
+            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] lg:ml-auto hover:underline underline-offset-8"
+            href="nonfound"
           >
             About
           </a>
           <a
-            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] "
-            href="/Nonfound"
+            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] hover:underline underline-offset-8"
+            href="/contact"
           >
             Contact
           </a>
           <a
-            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8]"
-            href="/Nonfound"
+            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] hover:underline underline-offset-8"
+            href="nonfound"
           >
             Documentation
           </a>
 
           <a
-            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8]"
-            href="/Nonfound"
+            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] "
+            href="/locationacservme"
           >
             <SiGooglemaps className="h-4 w-4 inline-block mr-1 ml-5" />
             find a ACSERVME
           </a>
 
           <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
-            <button
-              className="block px-6 py-2 mt-2 text-sm text-sm font-semibold text-[#519de8] rounded-full group focus:outline outline outline-2 outline-[#519de8] focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white active:bg-zinc-50 active:text-[#519de8] focus-visible:outline-black "
-              fdprocessedid="62a6vg"
-            >
+            <Link to="/account/login"
+              className="block px-6 py-2 mt-2 text-sm font-semibold text-[#519de8] rounded-full group focus:outline outline outline-2 outline-[#519de8] focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white active:bg-zinc-50 active:text-[#519de8] focus-visible:outline-black "
+              fdprocessedid="62a6vg">
+            
               Login
-            </button>
+            </Link>
             <button
-              className=" ml-1 inline-flex items-center justify-center px-6 py-2 mt-2 text-sm font-semibold text-[#519de8] rounded-full group focus:outline outline outline-2 outline-[#519de8] focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white active:bg-zinc-50 active:text-[#519de8] focus-visible:outline-black"
+            
+              className=" ml-1 inline-flex items-center justify-center px-5 py-2 mt-2 text-sm font-semibold text-[#519de8] rounded-full group focus:outline outline outline-2 outline-[#519de8] focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white active:bg-zinc-50 active:text-[#519de8] focus-visible:outline-black"
               fdprocessedid="qs5fwk"
             >
               Register
