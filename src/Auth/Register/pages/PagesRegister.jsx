@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../config/firebase.js";
+import { Link } from "react-router-dom";
 
 const PagesResgister = () => {
   const [email, setEmail] = useState("");
@@ -163,9 +164,10 @@ const PagesResgister = () => {
           </div>
           <p className="text-xs text-center sm:px-6 dark:text-zinc-500">
             Already have an account?
-            <Link to="/login" className="text-[#519de8] hover:underline">
-              Sign in
-            </Link>
+<Link to="/login"
+ className="text-[#519de8] hover:underline">
+  
+ </Link>
           </p>
         </div>
       </div>
