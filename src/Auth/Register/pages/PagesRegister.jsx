@@ -163,13 +163,9 @@ const PagesResgister = () => {
           </div>
           <p className="text-xs text-center sm:px-6 dark:text-zinc-500">
             Already have an account?
-            <a
-              rel="noopener noreferrer"
-              href="/login"
-              className="text-[#519de8] hover:underline"
-            >
+            <Link to="/login" className="text-[#519de8] hover:underline">
               Sign in
-            </a>
+            </Link>
           </p>
         </div>
       </div>

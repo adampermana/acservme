@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../config/firebase.js";
+import { Link } from "react-router-dom";
 
 const PagesLogin = () => {
   const [email, setEmail] = useState("");
@@ -11,7 +12,8 @@ const PagesLogin = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log(userCredential);
-      }).catch((error) => {
+      })
+      .catch((error) => {
         console.log(error);
       });
   };
@@ -77,7 +79,7 @@ const PagesLogin = () => {
             <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
           </div>
           <div className="mt-6 flex justify-center space-x-4">
-          <button
+            <button
               aria-label="Log in with Google"
               className="p-3 rounded-sm"
               fdprocessedid="152a0"
@@ -168,13 +170,9 @@ const PagesLogin = () => {
           </div>
           <p className="text-xs text-center sm:px-6 dark:text-zinc-500">
             Don't have an account?
-            <a
-              rel="noopener noreferrer"
-              href="/register"
-              className="text-[#519de8] hover:underline"
-            >
+            <Link to="/register" className="text-[#519de8] hover:underline">
               Sign up
-            </a>
+            </Link>
           </p>
         </div>
       </div>
