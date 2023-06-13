@@ -55,38 +55,24 @@ function NavAbout() {
           }
         >
 
-<a
-            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] lg:ml-auto hover:underline underline-offset-8"
-            href="/"
-          >
-            Home
-          </a>
-          <a
-            className="px-2 py-2 text-sm lg:px-6 md:px-3 text-[#519de8] underline underline-offset-8 "
-            href="nonfound"
-          >
-            About
-          </a>
-          <a
-            className="px-2 py-2 text-sm lg:px-6 md:px-3 "
-            href="/contact"
-          >
-            Contact
-          </a>
-          <a
-            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8]"
-            href="nonfound"
-          >
-            Documentation
-          </a>
 
-          <a
-            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8]"
-            href="/locationacservme"
-          >
+          <Link to="/" className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] lg:ml-auto hover:underline underline-offset-8">
+            Home
+          </Link>
+          <Link to="#" className="px-2 py-2 text-sm lg:px-6 md:px-3 text-[#519de8] underline underline-offset-8">
+            About
+          </Link>
+          <Link to="/contact" className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] hover:underline underline-offset-8">
+            Contact
+          </Link>
+          <Link to="/nonfound" className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] hover:underline underline-offset-8">
+            Documentation
+          </Link>
+
+          <Link to="/locationacservme" className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] ">
             <SiGooglemaps className="h-4 w-4 inline-block mr-1 ml-5" />
             find a ACSERVME
-          </a>
+          </Link>
 
           <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
           <Link to="/login"
