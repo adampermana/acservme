@@ -5,7 +5,7 @@
 
 import React from 'react'
 
-function Footer() {
+function ContactFooter() {
   return (
     <div>
 <footer className="footer p-11 bg-[#519de8] text-base-content">
@@ -62,4 +62,4 @@ function Footer() {
   )
 }
 
-export default Footer;
+export default ContactFooter;

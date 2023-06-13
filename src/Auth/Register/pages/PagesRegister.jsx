@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../config/firebase.js";
 
-const PagesLogin = () => {
+const PagesResgister = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const signIn = (e) => {
+  const signUp = (e) => {
     e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log(userCredential);
-      }).catch((error) => {
+      })
+      .catch((error) => {
         console.log(error);
       });
   };
@@ -21,9 +22,9 @@ const PagesLogin = () => {
       <div className="w-full max-w-md bg-white rounded-lg shadow-md">
         <div className="p-6">
           <h1 className="text-2xl font-bold text-center mb-6 sm:text-3xl">
-            Sign in to ACSERVME
+            Sign up to ACSERVME
           </h1>
-          <form onSubmit={signIn}>
+          <form onSubmit={signUp}>
             <div className="mb-4">
               <label htmlFor="email" className="block mb-2 text-sm font-medium">
                 Email
@@ -52,19 +53,13 @@ const PagesLogin = () => {
                 className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
                 placeholder="Enter your password"
               />
-              <a
-                href="#"
-                className="block mt-2 text-sm text-blue-500 sm:text-xs sm:mt-2 hover:underline"
-              >
-                Forgot Password?
-              </a>
             </div>
             <div>
               <button
                 type="submit"
                 className="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300"
               >
-                Log in
+                Create account
               </button>
             </div>
           </form>
@@ -77,7 +72,7 @@ const PagesLogin = () => {
             <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
           </div>
           <div className="mt-6 flex justify-center space-x-4">
-          <button
+            <button
               aria-label="Log in with Google"
               className="p-3 rounded-sm"
               fdprocessedid="152a0"
@@ -167,13 +162,13 @@ const PagesLogin = () => {
             </button>
           </div>
           <p className="text-xs text-center sm:px-6 dark:text-zinc-500">
-            Don't have an account?
+            Already have an account?
             <a
               rel="noopener noreferrer"
-              href="/register"
+              href="/login"
               className="text-[#519de8] hover:underline"
             >
-              Sign up
+              Sign in
             </a>
           </p>
         </div>
@@ -182,4 +177,4 @@ const PagesLogin = () => {
   );
 };
 
-export default PagesLogin;
+export default PagesResgister;

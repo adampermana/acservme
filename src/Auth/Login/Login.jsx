@@ -1,14 +1,14 @@
-import React from 'react'
-import PagesLogin from './Pages/PagesLogin'
-import HeaderIcon from "../Login/HeaderIcon.jsx"
+import React from "react";
+import PagesLogin from "./Pages/PagesLogin";
+import HeaderIconLogin from "./HeaderIconLogin.jsx";
 
 function Login() {
   return (
     <div>
-        <HeaderIcon/>
-        <PagesLogin />
+      <HeaderIconLogin />
+      <PagesLogin />
     </div>
-  )
+  );
 }
 
 export default Login;

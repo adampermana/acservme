@@ -14,7 +14,7 @@ function HeroContent() {
         <p className="text-black text-lg mb-5 font-extrabold">
           We provide the best AC repair services at affordable prices Affordable and friendly and professional service.
         </p>
-        <Link to="/account/login" className="rounded-full bg-[#519de8] font-medium text-sm px-6 py-2 text-white w-full sm:w-auto md:grid-cols-4">
+        <Link to="/login" className="rounded-full bg-[#519de8] font-medium text-sm px-6 py-2 text-white w-full sm:w-auto md:grid-cols-4">
           GET STARTED
         </Link>
       </div>

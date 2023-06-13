@@ -55,8 +55,14 @@ function NavContact() {
           }
         >
           <a
-            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] lg:ml-auto"
-            href="nonfound"
+            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] lg:ml-auto hover:underline underline-offset-8"
+            href="/"
+          >
+            Home
+          </a>
+          <a
+            className="px-2 py-2 text-sm text-black lg:px-6 md:px-3 hover:text-[#519de8] hover:underline underline-offset-8"
+            href="/about"
           >
             About
           </a>
@@ -82,18 +88,18 @@ function NavContact() {
           </a>
 
           <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
-          <Link to="/account/login"
+          <Link to="/login"
               className="block px-6 py-2 mt-2 text-sm font-semibold text-[#519de8] rounded-full group focus:outline outline outline-2 outline-[#519de8] focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white active:bg-zinc-50 active:text-[#519de8] focus-visible:outline-black "
               fdprocessedid="62a6vg">
             
               Login
             </Link>
-            <button
-              className=" ml-1 inline-flex items-center justify-center px-5 py-2 mt-2 text-sm font-semibold text-[#519de8] rounded-full group focus:outline outline outline-2 outline-[#519de8] focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white active:bg-zinc-50 active:text-[#519de8] focus-visible:outline-black"
-              fdprocessedid="qs5fwk"
-            >
+            <Link to="/register"
+              className="ml-1 inline-flex items-center justify-center px-5 py-2 mt-2 text-sm font-semibold text-[#519de8] rounded-full group focus:outline outline outline-2 outline-[#519de8] focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white active:bg-zinc-50 active:text-[#519de8] focus-visible:outline-black"
+              fdprocessedid="qs5fwk">
+            
               Register
-            </button>
+            </Link>
           </div>
         </nav>
       </div>
